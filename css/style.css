@@ -30,13 +30,8 @@
 	    white-space: nowrap;
 	}
 	.parallax { 
-    /* The image used */
     background-image: url("photos/DSC02325.jpg");
-
-    /* Full height */
     height: 200%; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +41,12 @@
 	    position: absolute;
 	    top: 64px;
 	    right: 16px;
-	    size: 50px;
+	    height: 50px;
+	    width: 50px;
+	}
+	.facebook{
+		height: 100%;
+		width: 100%;
 	}
 	.bold{
 		font-weight: 700;
@@ -54,10 +54,17 @@
 	}
 	.body-text{
 		position: relative;
-		top: 1000px;
 		z-index: 1;
+		height: 200%;
+		background-color: black;
 	}
-
+	.my-image{
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 100px;
+		padding-bottom: 36px;
+		display: block;
+	}
 	@font-face {
 	font-family: ProximaSans;
 	src: url("/fonts/ProximaSansRegular Regular.ttf");
