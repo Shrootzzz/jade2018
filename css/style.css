@@ -2,56 +2,61 @@
 	h2{
 
 	}
+	html{
+		height: 100%;
+	}
 	h1{
-		color: #1BA39C;
+		color: #FFFFFF;
+		opacity: 0.4;
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 72px;
+		font-size: 96px;
 		font-weight: 700;
 		margin: 32px;
-		position: relative;
-		top: 32px;
-	}
-	body{
-		align-content: center;
-		background-color: #0099f7;
-		/*background-image: url("photos/DSC02903.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;*/
 	}
 	p{
 		font-family: 'Montserrat', sans-serif;
 		margin: 64px;
 		color: #555555;
 	}
-	.body{
-		border-style: solid;
-		border-width: 64px;
-		border-color: #0099f7;
-		background-color: #FFFFFF;
-		size: 80%;
+	body{
+		height: 100%;
+	}
+	.header{
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translateX(-50%) translateY(-50%);	
+	    white-space: nowrap;
+	}
+	.parallax { 
+    /* The image used */
+    background-image: url("photos/DSC02325.jpg");
+
+    /* Full height */
+    height: 200%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 	.top-right{
 	    position: absolute;
 	    top: 64px;
 	    right: 16px;
-	    size: 64px;
+	    size: 50px;
 	}
 	.bold{
 		font-weight: 700;
 		color: red;
 	}
-/*	.facebook:hover {
-	  -webkit-transition: all .3s ease;
-	  -moz-transition: all .3s ease;
-	  -ms-transition: all .3s ease;
-	  -o-transition: all .3s ease;
-	  transition: all .3s ease;
-	  opacity: 1;
-	  transform: scale(1.5);
-	  -ms-transform: scale(1.5);  
-	  -webkit-transform: scale(1.5); 
-	}*/
+	.body-text{
+		position: relative;
+		top: 1000px;
+		z-index: 1;
+	}
 
 	@font-face {
 	font-family: ProximaSans;

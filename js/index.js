@@ -1,18 +1,23 @@
-$("img").hover(function() {
-    $(this).closest(".img").css("z-index", 1);
-
+$("img").on('mouseover',function() {
     $(this)
         .animate({
-          height: "75px", 
-          width: "75px", 
+          height: "60px", 
+          width: "60px", 
           left: "-=55", 
           top: "-=55"  
-        }, 400, function() {
-            $(this).animate({height: "50px", width: "50px"}, 100);
+        }, 400)
+    });
+
+$("img").on('mouseout',function() {
+    $(this)
+        .animate({
+          height: "50px", 
+          width: "50px",  
+        }, 400)
     });
 
 $('p').on('click', function() {
     $(this).toggleClass('bold');
 });
-})
+
 
