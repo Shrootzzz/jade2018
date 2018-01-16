@@ -5,24 +5,23 @@ $(document).ready(function() {
   $("div.body-text").css({height: windowHeight});
 
   $("img.facebook").on('mouseover',function() {
-    // var img = document.getElementsByClassName("facebook");
-    // var width = img.clientWidth * 1.2;
-    // var height = img.clientHeight * 1.2;
+    var halfWidth = $("img.facebook").width() * 0.6;
+    var halfHeight = $("img.facebook").height() * 0.6;
     $(this)
-        .animate({
-          height: "120%", 
-          width: "120%", 
-          // left: "-=width/2", 
-          // top: "-=height/2"  
-        }, 400)
+      .animate({
+        height: "120%", 
+        width: "120%", 
+        // left: -=halfWidth, 
+        // top: -=halfHeight  
+      }, 400)
   });
 
   $("img.facebook").on('mouseout',function() {
-      $(this)
-          .animate({
-            height: "100%", 
-            width: "100%",  
-          }, 400)
+    $(this)
+      .animate({
+        height: "100%", 
+        width: "100%",  
+      }, 400)
   });
 
   $('p').on('click', function() {

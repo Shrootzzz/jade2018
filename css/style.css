@@ -17,7 +17,8 @@
 	p{
 		font-family: 'Montserrat', sans-serif;
 		margin: 64px;
-		color: #555555;
+		color: #EAEFF5;
+		opacity: 0.7;
 	}
 	body{
 		height: 100%;
